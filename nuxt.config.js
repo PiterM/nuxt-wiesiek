@@ -5,6 +5,8 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
+  srcDir: "src/",
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Wiesiek Ostrowski - Moje Portfolio",
@@ -21,7 +23,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    "src/assets/base.css",
+    "src/assets/vendor.css",
+    "src/assets/main.css",
+    "src/assets/font-awesome/css/fontawesome-all.min.css",
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
