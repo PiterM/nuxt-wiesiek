@@ -33,7 +33,7 @@
  *  # intro 
  *  # about
  *    ## timeline
- *  # services
+ *  # music
  *  # CTA
  *  # works
  *  # testimonials
@@ -2478,21 +2478,17 @@ input::-moz-focus-inner {
 }
 
 /* ===================================================================
- * # services
+ * # music
  *
  * ------------------------------------------------------------------- */
-.s-services {
+.s-music {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-image: url(/images/services-bg.jpg);
   color: rgba(255, 255, 255, 0.7);
   position: relative;
 }
 
-.s-services .shadow-overlay {
+.s-music .shadow-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -2502,7 +2498,7 @@ input::-moz-focus-inner {
   background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 80%);
 }
 
-.s-services::before {
+.s-music::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2513,40 +2509,41 @@ input::-moz-focus-inner {
   opacity: 0.85;
 }
 
-.s-services h4 {
+.s-music h4 {
   font-weight: 400;
   color: #ffffff;
 }
 
-.s-services a {
+.s-music a {
   color: #c89308;
 }
 
-.s-services a:hover,
-.s-services a:focus,
-.s-services a:active {
+.s-music a:hover,
+.s-music a:focus,
+.s-music a:active {
   color: #ffffff;
 }
 
-.services-list {
+.music-list {
   max-width: 1240px;
   margin-top: 8.8rem;
   counter-reset: ctr;
   position: relative;
+  display: block;
 }
 
-.services-list .item-service {
+.music-list .item-service {
   margin-bottom: 2.4rem;
   padding: 0 30px;
-  min-height: 44.8rem;
+  max-width: none;
 }
 
-.services-list .item-service__content {
+.music-list .item-service__content {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 3.6rem;
 }
 
-.services-list .item-service__content::before {
+.music-list .item-service__content::before {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
@@ -2560,61 +2557,61 @@ input::-moz-focus-inner {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * music
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1400px) {
-  .services-list .item-service {
+  .music-list .item-service {
     padding: 0 20px;
   }
 
-  .services-list .item-service__content::before {
+  .music-list .item-service__content::before {
     font-size: 7.2rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .services-list {
+  .music-list {
     max-width: 900px;
   }
 
-  .services-list .item-service__content::before {
+  .music-list .item-service__content::before {
     font-size: 6.8rem;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .s-services {
+  .s-music {
     padding-top: 16rem;
     padding-bottom: 16rem;
   }
 
-  .services-list {
+  .music-list {
     max-width: 600px;
     margin-top: 8rem;
   }
 
-  .services-list .item-service {
+  .music-list .item-service {
     padding: 0 16px;
     min-height: 0;
   }
 
-  .services-list .item-service__content::before {
+  .music-list .item-service__content::before {
     font-size: 5.4rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .services-list .item-service {
+  .music-list .item-service {
     padding: 0 10px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .services-list .item-service {
+  .music-list .item-service {
     padding: 0;
   }
 
-  .services-list .item-service__content::before {
+  .music-list .item-service__content::before {
     font-size: 4.8rem;
   }
 }

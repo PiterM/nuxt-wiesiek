@@ -2,6 +2,10 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  server: {
+    host: "0.0.0.0",
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
@@ -11,7 +15,7 @@ export default {
   head: {
     title: "Wiesiek Ostrowski - Moje Portfolio",
     htmlAttrs: {
-      lang: "en",
+      lang: "pl",
     },
     meta: [
       { charset: "utf-8" },
@@ -20,6 +24,29 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      {
+        rel: "apple-touch-icon",
+        size: "180x180",
+        href: "/apple-touch-icon.png",
+      },
+    ],
+    link: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
+      },
+    ],
+    link: [
+      {
+        rel: "icon",
+        type: "image/png",
+        size: "16x16",
+        href: "/favicon-16x16.png",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
